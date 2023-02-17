@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.androud.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@+id/green_light"
+        android:layout_width="154dp"
+        android:layout_height="308dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/yellow_light"
+        android:layout_width="155dp"
+        android:layout_height="315dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/yellow_light" />
+
+    <ImageView
+        android:id="@+id/red_light"
+        android:layout_width="170dp"
+        android:layout_height="316dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        app:srcCompat="@drawable/red_light" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_centerInParent="true"
+        android:onClick="changeColor"
+        android:text="STOP"/>
+
+</RelativeLayout>
+
